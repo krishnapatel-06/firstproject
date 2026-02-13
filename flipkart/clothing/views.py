@@ -9,7 +9,9 @@ def shirt(request):
 
 def jeans(request):
     return render(request,'jeans.html')
+
 def tshirt(request):
     return render(request,'tshirt.html')
+
 def shoes(request):
     return render(request,'shoes.html')

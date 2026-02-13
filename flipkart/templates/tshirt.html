@@ -113,4 +113,146 @@
         }
 
         .card{
-            background:rgba(255,
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(15px);
+            width:280px;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 15px 35px rgba(0,0,0,0.6);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-15px) scale(1.05);
+            box-shadow:0 20px 45px rgba(0,242,254,0.6);
+        }
+
+        .card img{
+            width:100%;
+            height:240px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card-content h3{
+            margin-bottom:10px;
+        }
+
+        .card-content p{
+            font-size:14px;
+            color:#ccc;
+            margin-bottom:15px;
+        }
+
+        .price{
+            color:#00f2fe;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:8px 20px;
+            background:#00f2fe;
+            color:black;
+            text-decoration:none;
+            border-radius:25px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+            transform:scale(1.1);
+        }
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:15px;
+            font-size:14px;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(30px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:768px){
+            .hero-content h2{
+                font-size:30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>FashionStore</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirt.html">Shirts</a></li>
+            <li><a href="jeans.html">Jeans</a></li>
+            <li><a href="tshirt.html">T-Shirts</a></li>
+            <li><a href="shoes.html">Shoes</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Premium T-Shirts Collection</h2>
+            <p>Style meets comfort in every thread.</p>
+        </div>
+    </section>
+
+    <h2 class="section-title">Trending T-Shirts</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Casual T-Shirt">
+            <div class="card-content">
+                <h3>Classic Cotton T-Shirt</h3>
+                <p>Soft breathable cotton fabric perfect for daily comfort.</p>
+                <div class="price">₹799</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" alt="Printed T-Shirt">
+            <div class="card-content">
+                <h3>Graphic Printed Tee</h3>
+                <p>Trendy printed design for a bold and stylish look.</p>
+                <div class="price">₹999</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475" alt="Oversized T-Shirt">
+            <div class="card-content">
+                <h3>Oversized Street T-Shirt</h3>
+                <p>Relaxed fit oversized tee for ultimate street fashion.</p>
+                <div class="price">₹1099</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 FashionStore | Wear Your Style 👕
+    </footer>
+
+</body>
+</html>
